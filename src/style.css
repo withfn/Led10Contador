@@ -1,0 +1,94 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@800&family=Montserrat:wght@500;800&display=swap");
+
+* {
+  /* box-sizing: border-box; */
+  margin: 0;
+}
+
+body {
+  /* display: flex; */
+}
+
+main {
+  width: 672px;
+  height: 196px;
+  background: #1b1b1b;
+  background-image: url(background.jpg);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#timer {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  gap: 28px;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  gap: 8px;
+}
+
+.number-box {
+  font-family: Barlow Condensed;
+  font-size: 78px;
+  font-style: normal;
+  font-weight: 800;
+  background: #d9d9d9;
+  background: linear-gradient(
+    0deg,
+    rgba(2, 0, 36, 0) 0%,
+    rgba(217, 217, 217, 0) 0%,
+    rgba(217, 217, 217, 1) 20%,
+    rgba(217, 217, 217, 1) 80%,
+    rgba(217, 217, 217, 0) 100%
+  );
+  width: 60px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.number {
+  color: #1b1b1b;
+}
+
+.title {
+  font-family: Montserrat;
+  font-size: 24px;
+  font-weight: 800;
+  color: #fff;
+  letter-spacing: 9.84px;
+  margin-right: -11.84px;
+}
+
+.dias {
+  letter-spacing: 21.36px;
+}
+
+.legend {
+  color: #fff;
+  font-family: Montserrat;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 7.15px;
+  margin-right: 0px;
+  margin-top: 8px;
+}
+
+@media (max-width: 256px) {
+  .title,
+  .legend {
+    display: none;
+  }
+}
